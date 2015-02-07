@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var pickRandomWord = function(words){
+		return(words[Math.floor(Math.random()* words.length)]);
+	}
+
+	var randomInsultGenerator = function(){
+		var randoBodyParts = ['butt', 'nose', 'hears', 'mouth', 'face', 'feet', 'head'];
+		var randomAdjectives = ['ugly', 'fat', 'boring', 'stupid', 'flat'];
+		var randomWords = ['fly', 'mamooth', 'penguin', 'donkey', 'monkey', 'cow', 'dog'];
+
+		alert("You are a "+ pickRandomWord(randomWords)+ " who has a "+pickRandomWord(randomAdjectives)+  " "+ pickRandomWord(randoBodyParts));
+	}
+	// another way to write this function will be:
+	// they both have the same use
+	 function randomInsultGenerator(){{
+	 			var randoBodyParts = ['butt', 'nose', 'hears', 'mouth', 'face', 'feet', 'head'];
+		var randomAdjectives = ['ugly', 'fat', 'boring', 'stupid', 'flat'];
+		var randomWords = ['fly', 'mamooth', 'penguin', 'donkey', 'monkey', 'cow', 'dog'];
+
+		alert("You are a "+ pickRandomWord(randomWords)+ " who has a "+pickRandomWord(randomAdjectives)+  " "+ pickRandomWord(randoBodyParts));
+	 }}
+
+// #######################################################################################################
+		
+	var num1 = prompt("enter the first number");
+	var num2 = prompt("enter the second number");
+
+
+	function addition(num1, num2){
+		return num1 + num2;
+	}
+
+	function multiply(num1, num2){
+		return num1 * num2;
+	}
+
+	function choose(){
+		var condition = prompt("please enter addition or multiply");
+		if (condition === "addition"){
+			alert(addition(num1,num2));
+		}else if(condition === "multiply"){
+			alert(multiply(num1, num2));
+		}
+		else{
+			console.log("enter a valid entry");
+		}
+	}
+
+	choose();
+
+
+
+
+</script>
+</body>
+</html>

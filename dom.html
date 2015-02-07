@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulating the DOM JQuery</title>
+</head>
+<body>
+<h1 id="main-heading">Hello World!</h1>
+
+
+
+
+
+	<!-- ###############        All the scripts go after this comment ###############-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script type="text/javascript"> 
+ var newHeadingText = prompt("enter new header");
+ for (var i = 0; i<50; i++){
+	 $('#main-heading').text(newHeadingText).fadeIn(100);
+	 $('#main-heading').text(newHeadingText).fadeOut(100);
+	 // $('body').append("<p>This is all new text<p>").fadeTo(2000, 0.1);
+	 // $('body').append("<p>This is all new text<p>").fadeTo(2000, 0.7);
+
+	}
+ </script>
+
+</body>
+</html>

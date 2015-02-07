@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Oriented Programing</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+	var speak = function(){
+		console.log(this.sound + " My name is "+ this.name + "!");
+	}
+
+
+	var dog={
+		name: "pancake",
+		legs: 4,
+		isAwesome: true
+	}
+
+	dog.bark = function(){
+		console.log("Woof Woof! my name is " + this.name + "!");
+	}
+
+	var cat = {
+		sound: "Miaow",
+		name: "Mittens",
+		speak: speak
+	}
+
+
+
+	// dog.age = 6;
+
+	dog.bark();
+	cat.speak();
+</script>
+</body>
+</html>

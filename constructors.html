@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructors</title>
+</head>
+<body>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+	var Car = function(x, y){
+		this.x = x;
+		this.y = y;
+	};
+
+	Car.prototype.draw = function() {
+		var carHtml = '<img src="http://nostarch.com/images/car.png">';
+
+		this.carElement = $('carHtml');
+
+		this.carElement.css({
+			position: "absolute",
+			left: this.x,
+			top: this.y
+		})
+
+		$("body").append(this.carElement);
+	};
+
+	var tesla = new Car(20, 20);
+	var gtr = new Car(15, 20);
+
+	tesla.draw();
+	gtr.draw();
+
+</script>
+</body>
+</html>
